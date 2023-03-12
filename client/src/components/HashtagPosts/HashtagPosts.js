@@ -97,7 +97,7 @@ const HashtagPosts = ({ token, showModal, showAlert }) => {
         <h2 className="heading-2">#{hashtag}</h2>
         <h3 className="heading-3 font-medium">
           <span className="font-bold">{posts.postCount}</span>{' '}
-          {posts.postCount === 1 ? 'post' : 'posts'}
+          {posts.postCount === 1 ? '作品' : '作品'}
         </h3>
       </div>
       <ImageGrid>

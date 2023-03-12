@@ -67,7 +67,7 @@ const NewPostForm = ({
           onClick={() => back()}
           style={{ cursor: 'pointer' }}
         />
-        <h3 className="heading-3">New Post</h3>
+        <h3 className="heading-3">新作品</h3>
         <TextButton
           bold
           blue

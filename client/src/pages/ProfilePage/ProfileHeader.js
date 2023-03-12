@@ -24,7 +24,7 @@ const ProfileHeader = ({
       showModal(
         {
           options: [],
-          title: followers ? '关注' : 'Following',
+          title: followers ? '粉丝' : '关注',
           cancelButton: false,
           children: (
             <UsersList
@@ -61,7 +61,7 @@ const ProfileHeader = ({
                   options: [
                     {
                       warning: true,
-                      text: 'Unfollow',
+                      text: '取消关注',
                       onClick: () => follow(),
                     },
                   ],
@@ -110,7 +110,7 @@ const ProfileHeader = ({
 
         <div className="profile-stats">
           <p className="heading-3">
-            <b>{postCount}</b> {postCount === 1 ? 'post' : '作品'}
+            <b>{postCount}</b> {postCount === 1 ? '作品' : '作品'}
           </p>
           <p
             onClick={() => showUsersModal(followers)}
@@ -118,14 +118,14 @@ const ProfileHeader = ({
             className="heading-3"
           >
             <b>{followers}</b>{' '}
-            {followers > 1 || followers === 0 ? '关注' : 'follower'}
+            {followers > 1 || followers === 0 ? '粉丝' : '粉丝'}
           </p>
           <p
             onClick={() => showUsersModal(null, following)}
             style={{ cursor: 'pointer' }}
             className="heading-3"
           >
-            <b>{following}</b> 粉丝
+            <b>{following}</b> 关注
           </p>
         </div>
 
@@ -180,7 +180,7 @@ const ProfileHeader = ({
           <h3 className="heading-3">
             <b>{postCount}</b>
             <span className="font-medium color-grey">
-              {postCount === 1 ? 'post' : '作品'}
+              {postCount === 1 ? '作品' : '作品'}
             </span>
           </h3>
           <h3
@@ -190,7 +190,7 @@ const ProfileHeader = ({
           >
             <b>{followers}</b>{' '}
             <span className="font-medium color-grey">
-              {followers > 1 || followers === 0 ? '关注' : 'follower'}
+              {followers > 1 || followers === 0 ? '粉丝' : '粉丝'}
             </span>
           </h3>
           <h3
@@ -199,7 +199,7 @@ const ProfileHeader = ({
             className="heading-3"
           >
             <b>{following}</b>
-            <span className="font-medium color-grey">粉丝</span>
+            <span className="font-medium color-grey">关注</span>
           </h3>
         </div>
       </div>

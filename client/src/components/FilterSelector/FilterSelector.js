@@ -44,7 +44,7 @@ const FilterSelector = ({ setFilter, filters, previewImage }) => {
             onClick={() => handleClick('Normal', '')}
           >
             <span className="filter-selector__filter-name heading-5">
-              Normal
+              正常
             </span>
             <img src={previewImage} alt="Filter preview" />
           </li>

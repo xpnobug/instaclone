@@ -69,7 +69,7 @@ const UserCard = ({
             {subText}
             {date && (
               <span className="color-grey ml-sm">
-                {formatDateDistance(date)}
+                {formatDateDistance(date)+'前'}
               </span>
             )}
           </p>

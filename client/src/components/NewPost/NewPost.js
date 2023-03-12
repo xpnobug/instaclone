@@ -90,14 +90,14 @@ const NewPost = ({ file, hide }) => {
             onClick={() => hide()}
             style={{ cursor: 'pointer' }}
           />
-          <h3 className="heading-3">New Post</h3>
+          <h3 className="heading-3">新作品</h3>
           <TextButton
             bold
             blue
             style={{ fontSize: '1.5rem' }}
             onClick={() => setActiveSection('details')}
           >
-            Next
+            下一步
           </TextButton>
         </MobileHeader>
       )}

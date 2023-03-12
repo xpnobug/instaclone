@@ -49,25 +49,25 @@ const LoginCard = ({
       }
     >
       <Card className="form-card">
-        <h1 className="heading-logo text-center">Instaclone</h1>
+        <h1 className="heading-logo text-center">ONE</h1>
         <form
           onSubmit={(event) => handleSubmit(event)}
           className="form-card__form"
         >
           <FormInput
-            placeholder="Username or email address"
+            placeholder="登录名或者邮箱地址"
             type="text"
             onChange={(e) => setEmail(e.target.value)}
             required
           />
           <FormInput
-            placeholder="Password"
+            placeholder="密码"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             required
           />
           <Button disabled={fetching} loading={fetching}>
-            Log In
+            登录
           </Button>
         </form>
         <Divider>OR</Divider>
@@ -78,7 +78,7 @@ const LoginCard = ({
           </p>
         )}
         <TextButton style={{ marginTop: '1.5rem' }} darkBlue small>
-          Forgot password?
+          忘记密码？
         </TextButton>
       </Card>
       <Card>
@@ -91,16 +91,16 @@ const LoginCard = ({
           }}
         >
           <h4 style={{ marginRight: '5px' }} className="heading-4 font-thin">
-            Don't have an account?
+            还没有账户?
           </h4>
           <Link to="/signup" onClick={() => onClick && onClick()}>
             <TextButton medium blue bold>
-              Sign up
+              注册
             </TextButton>
           </Link>
         </section>
       </Card>
-      <ViewOnGithubButton />
+      {/*<ViewOnGithubButton />*/}
     </div>
   );
 };

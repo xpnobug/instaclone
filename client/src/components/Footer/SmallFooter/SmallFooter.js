@@ -22,7 +22,7 @@ const SmallFooter = () => {
       <div className="footer--small__links">
         {links.map((link, idx) => (
           <Link key={idx} to="/">
-            {link}
+            {/*{link}*/}
           </Link>
         ))}
       </div>
@@ -30,13 +30,13 @@ const SmallFooter = () => {
         className="heading-5 color-grey-2 footer--small__copyright mt-lg font-bold"
         style={{ textTransform: 'uppercase ' }}
       >
-        Made with{' '}
+
         <Icon
           icon="heart"
           className="color-grey-2 icon--small"
           style={{ margin: '0 5px' }}
         />{' '}
-        by Sander Moen
+
       </h5>
     </footer>
   );

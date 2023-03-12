@@ -59,7 +59,7 @@ const FollowButton = ({
               options: [
                 {
                   warning: true,
-                  text: 'Unfollow',
+                  text: '取消关注',
                   onClick: () => follow(),
                 },
               ],
@@ -70,13 +70,13 @@ const FollowButton = ({
         }
         inverted
       >
-        Following
+        取消关注
       </Button>
     );
   }
   return (
     <Button style={style} loading={loading} onClick={() => follow()}>
-      Follow
+      关注
     </Button>
   );
 };

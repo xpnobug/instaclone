@@ -5,14 +5,14 @@ import NotificationFeed from '../../components/Notification/NotificationFeed/Not
 
 const ActivityPage = () => {
   useEffect(() => {
-    document.title = 'Instaclone';
+    document.title = 'ONE';
   }, []);
 
   return (
     <Fragment>
       <MobileHeader>
         <div></div>
-        <h3 className="heading-3">Activity</h3>
+        <h3 className="heading-3">消息</h3>
         <div></div>
       </MobileHeader>
       <main className="activity-page grid">

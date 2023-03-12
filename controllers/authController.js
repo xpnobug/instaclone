@@ -89,7 +89,7 @@ module.exports.loginAuthentication = async (req, res, next) => {
     });
     if (!user || !user.password) {
       return res.status(401).send({
-        error: 'The credentials you provided are incorrect, please try again.',
+        error: '您提供的凭证不正确，请重试。',
       });
     }
 
@@ -100,7 +100,7 @@ module.exports.loginAuthentication = async (req, res, next) => {
       if (!result) {
         return res.status(401).send({
           error:
-            'The credentials you provided are incorrect, please try again.',
+            '您提供的凭证不正确，请重试。',
         });
       }
 

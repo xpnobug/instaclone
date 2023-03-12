@@ -60,12 +60,12 @@ const SuggestedUsers = ({ token, showAlert, card, style, max }) => {
     <div className="suggested-users" style={style}>
       <Fragment>
         <div className="suggested-users__large">
-          <h3 className="heading-3 mb-md">Suggestions for you</h3>
+          <h3 className="heading-3 mb-md">推荐用户</h3>
           {card ? <Card>{renderUsers()}</Card> : <div>{renderUsers()}</div>}
         </div>
         <div className="suggested-users__small">
           <div className="suggested-users__title">
-            <h2 className="heading-2 font-thin">Welcome to Instaclone</h2>
+            <h2 className="heading-2 font-thin">Welcome to ONE</h2>
             <h3 className="heading-3 font-medium color-grey">
               When you follow somebody you can see their photos here.
             </h3>

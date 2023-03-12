@@ -59,12 +59,12 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
   return (
     <Fragment>
       <Card className="form-card">
-        <h1 className="heading-logo text-center">Instaclone</h1>
+        <h1 className="heading-logo text-center">ONE</h1>
         <h2
           style={{ fontSize: '1.7rem' }}
           className="heading-2 color-grey text-center"
         >
-          Sign up to see photos and videos from your friends.
+          注册查看你朋友的照片和视频。
         </h2>
         <GithubLoginButton
           style={{
@@ -95,24 +95,24 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
             name="email"
             fieldProps={formik.getFieldProps('email')}
             valid={formik.touched.email && !formik.errors.email}
-            placeholder="Email address"
+            placeholder="邮箱地址"
           />
           <FormInput
             name="fullName"
             fieldProps={formik.getFieldProps('fullName')}
             valid={formik.touched.fullName && !formik.errors.fullName}
-            placeholder="Full Name"
+            placeholder="昵称"
           />
           <FormInput
             name="username"
             fieldProps={formik.getFieldProps('username')}
             valid={formik.touched.username && !formik.errors.username}
-            placeholder="Username"
+            placeholder="登录名"
           />
           <FormInput
             name="password"
             fieldProps={formik.getFieldProps('password')}
-            placeholder="Password"
+            placeholder="密码"
             valid={formik.touched.password && !formik.errors.password}
             type="password"
           />
@@ -122,7 +122,7 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
               Object.keys(formik.touched).length === 0 ? true : !formik.isValid
             }
           >
-            Sign Up
+            注册
           </Button>
           <p></p>
         </form>
@@ -132,9 +132,7 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
             : formik.submitCount > 0 && Object.values(formik.errors)[0]}
         </p>
         <p className="heading-5 color-grey">
-          By signing up, you agree to our Terms . Learn how we collect, use and
-          share your data in our Data Policy and how we use cookies and similar
-          technology in our Cookies Policy .
+          注册即表示您同意我们的条款。了解我们如何在我们的数据政策中收集、使用和共享您的数据，以及我们如何在我们的cookie政策中使用cookie和类似技术.
         </p>
       </Card>
       <Card>
@@ -147,16 +145,16 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
           }}
         >
           <h4 style={{ marginRight: '5px' }} className="heading-4 font-thin">
-            Have an account?
+            有账号啦?
           </h4>
           <Link to="/login">
             <TextButton medium blue bold>
-              Log in
+              去登陆
             </TextButton>
           </Link>
         </section>
       </Card>
-      <ViewOnGithubButton />
+      {/*<ViewOnGithubButton />*/}
     </Fragment>
   );
 };

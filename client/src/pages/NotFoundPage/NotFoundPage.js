@@ -10,11 +10,11 @@ const NotFoundPage = () => (
         padding: '0 2rem',
       }}
     >
-      <h1 className="heading-1">Sorry, this page isn't available.</h1>
+      <h1 className="heading-1">404.</h1>
       <h3 className="heading-3 font-medium">
-        The link you followed may be broken, or the page may have been removed.{' '}
+        您所点击的链接可能已断开，或者该页面已被删除.{' '}
         <Link to="/" className="link">
-          Go back to Instaclone.
+          Go back to ONE.
         </Link>
       </h3>
     </div>

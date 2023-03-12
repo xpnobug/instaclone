@@ -71,7 +71,7 @@ const NotificationFeed = ({
 
           switch (notification.notificationType) {
             case 'follow': {
-              userCardProps.subText = 'started following you.';
+              userCardProps.subText = '关注了你.';
               userCardChild = (
                 <FollowButton
                   username={notification.sender.username}
@@ -83,7 +83,7 @@ const NotificationFeed = ({
               break;
             }
             case 'like': {
-              userCardProps.subText = 'liked your photo.';
+              userCardProps.subText = '赞了你的作品.';
               userCardChild = (
                 <Link to={`/post/${notification.notificationData.postId}`}>
                   <img
@@ -105,7 +105,7 @@ const NotificationFeed = ({
               userCardProps.subText = (
                 <Linkify options={linkifyOptions}>{`${
                   notification.notificationType === 'comment'
-                    ? 'commented:'
+                    ? '评论:'
                     : 'mentioned you in a comment:'
                 } ${notification.notificationData.message}`}</Linkify>
               );

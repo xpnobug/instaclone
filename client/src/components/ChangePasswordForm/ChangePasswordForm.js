@@ -22,7 +22,7 @@ const ChangePasswordForm = ({ currentUser, token, showAlert }) => {
   const [confirmNewPassword, setConfirmNewPassword] = useState('');
   const [fetching, setFetching] = useState(false);
   useEffect(() => {
-    document.title = 'Change Password • Instaclone';
+    document.title = 'Change Password • ONE';
   }, []);
 
   const handleSubmit = async (event) => {
@@ -92,7 +92,7 @@ const ChangePasswordForm = ({ currentUser, token, showAlert }) => {
       <SettingsFormGroup>
         <label></label>
         <TextButton style={{ width: '15rem', textAlign: 'left' }} blue bold>
-          Forgot Password?
+          忘记密码？
         </TextButton>
       </SettingsFormGroup>
     </SettingsForm>

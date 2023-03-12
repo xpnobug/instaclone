@@ -59,7 +59,7 @@ const Comment = ({
   useEffect(() => {
     const commentPostTimeInterval = setInterval(() => {
       setCommentPostTime(
-        formatDateDistance(caption ? post.date : comment.date)
+        formatDateDistance(caption ? post.date : comment.date)+'前'
       );
     }, 60000);
     return () => clearInterval(commentPostTimeInterval);

@@ -8,7 +8,7 @@ const UnfollowPrompt = ({ avatar, username }) => (
     <p
       style={{ marginTop: '3rem' }}
       className="heading-4"
-    >{`Unfollow @${username}?`}</p>
+    >{`取消关注 @${username}?`}</p>
   </div>
 );
 
